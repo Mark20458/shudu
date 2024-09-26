@@ -1,0 +1,10 @@
+^C:\USERS\HP\DESKTOP\SHUDU\BUILD\CMAKEFILES\713FBC96C4AB89F161D075DBF62768DF\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/HP/Desktop/shudu -BC:/Users/HP/Desktop/shudu/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/HP/Desktop/shudu/build/shudu.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
